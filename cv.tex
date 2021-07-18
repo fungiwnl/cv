@@ -1,0 +1,298 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage[default]{lato}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{fontawesome}
+\usepackage{enumitem}
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+% indentsection style, used for sections that aren't already in lists
+% that need indentation to the level of all text in the document
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+
+% opposite of above; bump a section back toward the left margin
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+
+% format two pieces of text, one left aligned and one right aligned
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+
+% make "C++" look pretty when used in text by touching up the plus signs
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+
+% and the actual content starts here
+\begin{document}
+
+\begin{center}
+	{\LARGE \textbf{Brian Fung}}\\
+	Melbourne, Australia
+	\vspace{0.05cm}
+	\\
+\end{center}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Professional History}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+		
+	\item
+	      \headerrow
+	      {\textbf{Two Bulls}}
+	      {\textbf{Melbourne}}
+	      \headerrow
+	      {\emph{Senior QA Engineer}}
+	      {\emph{September 2019 -- Present}}
+	      \begin{itemize*}
+	        \item Core Tester responsible for the test strategy, test creation, test execution and test automation in both agile and waterfall projects for desktop and mobile based applications.
+	        \item Designed and implemented numerous in-sprint CI/CD pipelines for native iOS and Android applications, reducing time to manually create and distribute builds to internal and external stakeholders.
+	      	\item Designed and implemented an AWS test pipeline for Scouts to support the ongoing development team's test automation efforts.
+	      	\item Implemented an automated test solution as part of the Beyond Now support contract to test live builds for new iOS and Android OS releases.
+	      \end{itemize*}
+	      \headerrow
+	      {\emph{QA Engineer}}
+	      {\emph{May 2017 -- September 2019}}
+	      \begin{itemize*}
+	      	\item Core Tester responsible for test creation, execution and automation in both agile and waterfall environments on desktop and mobile based applications. 
+	        \item Implemented a CI/CD pipeline for a cross platform video distribution platform for the core, desktop and mobile application streams.
+	      	\item Created a tool to install test builds on iOS and Android mobile devices, reducing manual test set up from 10 minutes+ to one minute. 
+	      \end{itemize*}
+	      	      
+	\item
+	      \headerrow
+	      {\textbf{Rohde\&Schwarz}}
+	      {\textbf{Singapore}}
+	      \headerrow
+	      {\emph{Engineering Intern}}
+	      {\emph{November 2015 -- Febuary 2016}}
+	      \begin{itemize*}
+	      	\item Developed a Wireshark dissector plugin in Lua for the EB500 Monitoring Receiver, to help troubleshoot issues in the development workflow.
+	      	\item Worked with Test Engineers to improve test automation scripts for the EB500 Monitoring Receiver and assisted in regression testing activities as part of firmware releases.
+	      \end{itemize*}
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Featured Projects}
+
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+		
+	\item
+	      \headerrow
+	      {\textbf{Scouts Australia}}
+	      {\textbf{}}
+	      \headerrow
+	      {\emph{July 2021 -- Present}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item A youth digital platform to uplift the existing pen and paper Scouts system.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{Service Victoria}}
+	      {\textbf{}}
+	      {\emph{April 2021 -- July 2021}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item A mobile app to check-in throughout Victoria and securely store and share your identity including things like licences and permits.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{Release Me}}
+	      {\textbf{}}
+	      {\emph{January 2021 -- April 2021}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item A service to release real estate to the market.
+	      \end{itemize*}
+	      
+	       \headerrow
+	      {\textbf{Ufonik}}
+	      {\textbf{}}
+	      {\emph{October 2020 -- December 2020}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item A social media mobile app for creators of music and fans of music. TikTok meets the Voice.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{28 by Sam Wood}}
+	      {\textbf{}}
+	      \headerrow
+	      {\emph{August 2020 -- October 2020}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item A fitness and nutrition mobile app to help people live their life better by bringing life-changing fitness and nutrition to every home.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{Covidcare}}
+	      {\textbf{}}
+	      \headerrow
+	      {\emph{Mar 2020 -- April 2020}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item A mobile app linking patients in self-isolation to doctors at the front-line of the Covid-19 pandemic, partnering with Melbourne University.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{Beyond Now}}
+	      {\textbf{}}
+	      \headerrow
+	      {\emph{Jan 2018 -- Present}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item Beyond blue's suicide safety planning app that assists you to create your own suicide safety plan; a plan to keep you safe when experiencing suicidal thoughts.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{Althea Concierge}}
+	      {\textbf{}}
+	      \headerrow
+	      {\emph{March 2019 -- April 2019}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item A service that simplifies the medicinal cannabis application process for patients and healthcare professionals, making it easier for patients to access the support they need.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{Sesame Street Yourself}}
+	      {\textbf{}}
+	      \headerrow
+	      {\emph{September 2018 -- December 2018}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item An engaging mobile Augmented Reality experience enabling children to sing and play along with their favorite screen characters.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{Wiggles - Fun Time with Faces}}
+	      {\textbf{}}
+	      \headerrow
+	      {\emph{February 2018 -- September 2018}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item A brand new way of telling stories and singing songs with interactive video and fun Augmented Reality faces.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{Verizon Digital Kiosk}}
+	      {\textbf{}}
+	      \headerrow
+	      {\emph{2017 -- 2018}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item Communications hubs that connect people to important and useful information - providing weather and emergency alerts, maps and local community information about transit, restaurants, businesses and events.
+	      \end{itemize*}
+	      
+	      \headerrow
+	      {\textbf{Vividas}}
+	      {\textbf{}}
+	      \headerrow
+	      {\emph{2017 -- 2018}}
+	      {\emph{}}
+	      \begin{itemize*}
+	      	\item Cross platform video distribution and playback service for mobile and desktop.
+	      \end{itemize*}
+	      
+\end{itemize}
+	      
+\hrule
+\vspace{-1em}
+\subsection*{\Large Skills}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+	\item \textbf{Languages:}
+	      Python, Bash, Swift, JavaScript, Typescript, Kotlin, Lua, \CPP, \LaTeX
+	\item \textbf{Software:}
+	       Atlassian (Bitbucket Cloud, Jira, Confluence), AWS (EC2, Lambda, Cloudformation, Cloudwatch, S3, Cloudfront, Route53), Test Automation (Cypress, Puppeteer, Postman/Newman, XCUITest, Espresso, Appium, Selenium), CI/CD (Jenkins, Gitlab, Bitrise, Buddybuild, Github Actions), Packet Sniffer and Network Analysis (Charles Proxy, Wireshark), Device Farms (AWS Device Farm, Browserstack, Kobiton)
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Training and Certification}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+	\item
+	      \headerrow
+	      {\textbf{OWASP Appsec Day 2019}}
+	      {\textbf{Melbourne, AU}}
+	      \headerrow
+	      {\emph{Web Hacking Essentials}}
+	      {\emph{November 2019}}
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\subsection*{\Large Education}
+
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+		
+	\item
+	      \headerrow
+	      {\textbf{RMIT University}}
+	      {\textbf{Melbourne, AU}}
+	      \headerrow
+	      {\emph{B.S. Electrical Engineering/Commerce}}
+	      {\emph{March 2012 -- July 2017}}
+	      	      
+\end{itemize}
+
+\subsection*{\Large Interests}
+
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+	
+	\item \textbf{Professional:}
+	      Testing, Automation, DevOps, Cyber Security
+	\item \textbf{Hobbies:}
+	      Fitness (Powerlifting, Calisthenics), Investing (Stocks, Cryptocurrency), Gaming (Valorant), Photography
+	\item \textbf{Languages:}
+		  Cantonese, Japanese, Korean
+	      	      
+\end{itemize}
+
+\hrule
+\vspace{-1em}
+\begin{center}
+	\vspace{0.8cm}
+	\raisebox{-0.2\height} {\Large \faPhoneSquare} \ \  0422 285 751 \hfill\raisebox{-0.2\height}{\Large \faEnvelopeSquare} \ \ brianf.iwnl@gmail.com \hfill \raisebox{-0.2\height}{\Large \faGithubSquare} \ \ github.com/fungiwnl \hfill \raisebox{-0.2\height}{\Large \faGlobe} \ \ https://b-fung.com
+\end{center}
+
+\end{document}
