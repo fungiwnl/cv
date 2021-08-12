@@ -35,7 +35,7 @@ jobs:
         docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
     - name: Build the .tex
       run: |
-        docker run \      
+        docker run \
           --volume $(pwd):/tmp \
           fungiwnl/tex \
           pdflatex cv.tex
