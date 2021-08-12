@@ -12,19 +12,26 @@ jobs:
       run: docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
     - uses: actions/checkout@v2
     - name: Build the .tex
-      run: docker run \      
-           --volume $(pwd):/tmp \
-           fungiwnl/tex \
-           pdflatex cv.tex
-           
+      run: |
+        docker run \      
+          --volume $(pwd):/tmp \
+          fungiwnl/tex \
+          pdflatex cv.tex
+
   macos-build:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
+    - name: Install docker # Taken from https://github.com/actions/virtual-environments/issues/1143#issuecomment-652264388
+      run: |
+        mkdir -p ~/.docker/machine/cache
+        curl -Lo ~/.docker/machine/cache/boot2docker.iso https://github.com/boot2docker/boot2docker/releases/download/v19.03.12/boot2docker.iso
+        brew install docker docker-machine
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
     - name: Build the .tex
-      run: docker run \      
-           --volume $(pwd):/tmp \
-           fungiwnl/tex \
-           pdflatex cv.tex
+      run: |
+        docker run \      
+          --volume $(pwd):/tmp \
+          fungiwnl/tex \
+          pdflatex cv.tex
