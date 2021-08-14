@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image and .tex
       run: | 
-        docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
+        docker build . --file Dockerfile --tag fungiwnl/tex
         docker run --volume $(pwd):/tmp fungiwnl/tex pdflatex cv.tex
 
   macos-build:
@@ -27,5 +27,5 @@ jobs:
     - name: Build the Docker image and .tex
       run: |
         eval "$(docker-machine env default)" 
-        docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
+        docker build . --file Dockerfile --tag fungiwnl/tex
         docker run --volume $(pwd):/tmp fungiwnl/tex pdflatex cv.tex
