@@ -8,12 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
+    - name: Build the Docker image and .tex
       run: | 
         docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
-    - uses: actions/checkout@v2
-    - name: Build the .tex
-      run: |
         docker run --volume $(pwd):/tmp fungiwnl/tex pdflatex cv.tex
 
   macos-build:
@@ -27,10 +24,8 @@ jobs:
         brew install docker docker-machine
         docker-machine create --driver virtualbox default
         docker-machine env default
-    - name: Build the Docker image
+    - name: Build the Docker image and .tex
       run: |
         eval "$(docker-machine env default)" 
         docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
-    - name: Build the .tex
-      run: |
         docker run --volume $(pwd):/tmp fungiwnl/tex pdflatex cv.tex
