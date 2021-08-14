@@ -9,14 +9,12 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
+      run: | 
+        docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
     - uses: actions/checkout@v2
     - name: Build the .tex
       run: |
-        docker run \      
-          --volume $(pwd):/tmp \
-          fungiwnl/tex \
-          pdflatex cv.tex
+        docker run --volume $(pwd):/tmp fungiwnl/tex pdflatex cv.tex
 
   macos-build:
     runs-on: macos-latest
@@ -35,7 +33,4 @@ jobs:
         docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)
     - name: Build the .tex
       run: |
-        docker run \
-          --volume $(pwd):/tmp \
-          fungiwnl/tex \
-          pdflatex cv.tex
+        docker run --volume $(pwd):/tmp fungiwnl/tex pdflatex cv.tex
