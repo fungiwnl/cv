@@ -13,7 +13,7 @@
 
 #### Build the Dockerfile
 
-`docker build . --file Dockerfile --tag fungiwnl/tex:$(date +%s)`
+`docker build . --file Dockerfile --tag fungiwnl/tex`
 
 #### Vscode live editor
 
@@ -54,7 +54,7 @@ If docker is too much work then you can just use Overleaf to live edit and compi
 ## To-do 
 
 - The provided dockerfile uses the full `texfull-live` behemoth, so the docker image is 4GBs. Ideally, we have a minimal dependency docker image compiling the tex.
-- GitHub Actions caching. The docker image is building from scratch everytime, so it takes a good 10 minutes long.
+- GitHub Container Registry caching. The docker image is building from scratch everytime, so it takes a good 10 minutes long.
 
 ## License and Credits
 
