@@ -41,10 +41,7 @@ pdflatex cv.tex
 ```
 
 
-
-### Overleaf
-
-If docker is too much work then you can just use Overleaf to live edit and compile the cv .tex file. 
+### Using Overleaf
 
 1. Create a new project in Overleaf.
 2. Copy cv.tex into your project.
@@ -58,4 +55,4 @@ If docker is too much work then you can just use Overleaf to live edit and compi
 
 ## License and Credits
 
-The resume template is **very** closely based on a template from [dphang](https://github.com/dphang/resume), who also adapted from another template.
+Credit to [dphang](https://github.com/dphang/resume) for the template

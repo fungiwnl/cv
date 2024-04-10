@@ -7,6 +7,8 @@
 \usepackage{textcomp}
 \usepackage{fontawesome}
 \usepackage{enumitem}
+\RequirePackage{tikz}
+\usetikzlibrary{arrows}
 \DeclareFontFamily{U}{fontawesomeOne}{}
 \DeclareFontShape{U}{fontawesomeOne}{m}{n}
 {<-> FontAwesome--fontawesomeone}{}
@@ -38,9 +40,9 @@
 #2 \\
 \end{tabular*}}
 
-% make "C++" look pretty when used in text by touching up the plus signs
-\newcommand{\CPP}
-{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+\newcommand{\cvtag}[1]{%
+  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
 
 % and the actual content starts here
 \begin{document}
@@ -69,12 +71,18 @@
 	{\emph{Software Test Engineer}}
 	{\emph{September 2021 -- Present}}
 	\begin{itemize*}
-      \item Quality Engineer for the customer account and identity team.
-	  \item Lead proponent of Kmart Online's automation framework and performance testing intiatives.
-	  \item Quality chapter lead with the responsibility mentoring and guiding its members in automation.
-	
+      \item Quality Engineer for the customer account and identity team (MyAccount).
+	  \item Lead maintainer for Kmart Online's test automation and performance testing initiatives cross teams (MyAccount, Cart, Availability).
+      \item Wired up the existing automation suite, using Github Actions to run tests within the Buildkite CI/CD pipeline and set up additional cron jobs to run the tests.
+      \item Uplifted the sunsetted automation framework from synchronous Webdriver.io to asynchronous Webdriver.io: adding linting, logging, email testing capability, and all around improvements of the stability of the test suite.
+      \item Currently, migrating functional tests to run against stubs. So far, greatly reducing test run time: 10 tests that took 10 minutes to run down to to 30 seconds.
+      \item Currently, migrating the Jmeter performance tests to K6 to uplift the performance testing workflow
 
 	\end{itemize*}
+       \vspace{0.2cm}
+            \cvtag {Typescript/Javacript} \cvtag{Github Actions} \cvtag {Jmeter/K6}  \cvtag{Webdriver.io} \cvtag{Wiremock} \cvtag{Docker}  
+            \vspace{0.4cm}
+        
 		
 	\item
 	      \headerrow
@@ -84,31 +92,21 @@
 	      {\emph{Senior QA Engineer}}
 	      {\emph{September 2019 -- August 2021}}
 	      \begin{itemize*}
-	        \item Quality Engineer responsible for the test strategy, test creation, test execution and automation in agile environments for web and mobile based applications.
-	      	\item Integrated end to end tests that were run on local machines to existing CI/CD pipeline for the Scouts project to support the ongoing development team's automation efforts.
-	      	\item Developed an automated test solution as part of the Beyond Now support contract to test live builds for new iOS and Android OS releases.
-        \   \item Created numerous CI/CD pipelines for native iOS and Android projects, including Game Engines.
+	        \item Quality Engineer responsible for the test strategy, test creation, test execution and automation in agile environments for responsive web and native mobile applications.
+            \item Provided DevOps support: created and maintained numerous CI/CD pipelines for native iOS and Android mobile applications and Game Engines.
 	      \end{itemize*}
 	      \headerrow
 	      {\emph{QA Engineer}}
 	      {\emph{May 2017 -- September 2019}}
 	      \begin{itemize*}
 	      	\item Responsible for test creation, execution and automation in both agile and waterfall environments on desktop and mobile based applications. 
-	        \item Created a CI/CD pipeline for a cross platform video distribution platform for the core, desktop and mobile application streams.
-	      	\item Created a script to install test builds on iOS and Android mobile devices for exploratory, greatly reducing manual test set up time. 
+	        \item Created a CI pipeline for a cross platform video distribution platform for the core, windows and native mobile application streams.
+	      	\item Developed a script to install test builds for on-premise iOS and Android mobile devices for testing, greatly reducing the time to set up testing activities. 
 	      \end{itemize*}
-	      	      
-	\item
-	      \headerrow
-	      {\textbf{Rohde\&Schwarz}}
-	      {\textbf{Singapore}}
-	      \headerrow
-	      {\emph{Engineering Intern}}
-	      {\emph{November 2015 -- Febuary 2016}}
-	      \begin{itemize*}
-	      	\item Developed a Wireshark dissector plugin in Lua for the EB500 Monitoring Receiver, to help troubleshoot issues in the development workflow.
-	      	\item Worked with Senior Test Engineers to improve test automation scripts for the EB500 Monitoring Receiver and assisted in regression testing activities as part of firmware releases.
-	      \end{itemize*}
+
+            \vspace{0.2cm}
+            \cvtag {Javascript} \cvtag{Cypress}  \cvtag{Appium}  \cvtag{Github Actions}  \cvtag{Jenkins} \cvtag{Gitlab}
+            \vspace{0.4cm}
 	      	      
 \end{itemize}
 
@@ -120,114 +118,168 @@
 \renewcommand\labelitemii{$\bullet$}
 \begin{itemize}[leftmargin=1em]
 	\parskip=0.1em
+
+	\item
+	      \headerrow
+	      {\textbf{Release.me - Web}}
+	      {\textbf{}}
+	      \begin{itemize*}
+	      	\item An off the plan real estate platform for developers and buyers.  
+                \item Developed an automation test suite using Cypress that ran as part of the CI/CD pipeline
+	      \end{itemize*}
+            \vspace{0.2cm}
+            \cvtag {Javascript} \cvtag{Cypress} \cvtag{Codepipelines}
+            \vspace{0.4cm}
+        
 	
 	\item
-	\headerrow
-	{\textbf{Kmart Online}}
-	{\textbf{}}
-	\headerrow
-	{\emph{September 2021 -- Present}}
-	{\emph{}}
-	\begin{itemize*}
-		\item Kmart Australia and New Zealands online ecommerce web application serving millions of customers 
-	\end{itemize*}
-		
-	\item
 	      \headerrow
-	      {\textbf{Scouts Australia}}
+	      {\textbf{Scouts Australia - Web}}
 	      {\textbf{}}
-	      \headerrow
-	      {\emph{July 2021 -- August 2021}}
-	      {\emph{}}
 	      \begin{itemize*}
-	      	\item A youth digital web platform to uplift the existing pen and paper Scouts system.
+	      	\item A digital web transformation to uplift the Scouts analogue paper system.
+                \item Provided DevOps support: created a pipeline for running the regression automation test suite to support the teams ongoing automation efforts.
+                \item Contributed to the ongoing development off the test automation suite. 
 	      \end{itemize*}
-	      
+            \vspace{0.2cm}
+            \cvtag {Javascript} \cvtag{Cypress} \cvtag{Cloudformation} \cvtag{Codepipelines}
+            \cvtag{Cloudformation} \cvtag{Lambda} \cvtag{S3} \cvtag{Cloudfront} \cvtag{Route53}
+            \vspace{0.4cm}
+
+          \headerrow                                                                                       
+          {\textbf{Ufonik - Mobile}}
+          {\textbf{}}
+          \headerrow
+          {\emph{June 2021 -- July 2021}}
+          {\emph{}}
+          \begin{itemize*}
+          	\item A tik-tok esque native mobile application designed for musicians and content creators.
+            \item Provided DevOps support: creating and maintaining the Buddybuild CI/CD pipeline for the iOS mobile app and integrated automation tests to run within the pipeline. 
+	      \end{itemize*}
+           \vspace{0.2cm}
+           \cvtag {Swift} \cvtag{iOS} \cvtag{Buddybuild CI} \cvtag{XCUITest} \cvtag{Snapshot tests}
+           \vspace{0.4cm}
+
+          \headerrow                                                                                       
+          {\textbf{21 Cricket - Mobile}}
+          {\textbf{}}
+          \headerrow
+          {\emph{May 2021 -- June 2021}}
+          {\emph{}}
+          \begin{itemize*}
+          	\item A fitness and training mobile app focused on cricket for Michael Clark. 
+            \item Provided DevOps support: set up the code signing, created and maintained the CI/CD pipeline using Github Actions.
+            \item Developed component widget tests in flutter.
+	      \end{itemize*}
+           \vspace{0.2cm}
+           \cvtag {Dart} \cvtag{Flutter} \cvtag{Github Actions} \cvtag{Fastlane}
+           \vspace{0.4cm}
+
 	      \headerrow
-	      {\textbf{Service Victoria}}
+	      {\textbf{Service Victoria - Mobile}}
 	      {\textbf{}}
-	      {\emph{April 2021 -- July 2021}}
+	      {\emph{April 2017 -- July 2021}}
 	      {\emph{}}
 	      \begin{itemize*}
 	      	\item A mobile app to check-in throughout Victoria and securely store and share your identity including things like licences and permits.
+            \item Provided DevOps support: created and maintained the Bitrise CI/CD pipelines, automating deployment of release builds to the Google Play and App store. 
 	      \end{itemize*}
+            \vspace{0.2cm}
+            \cvtag {iOS} \cvtag{Android} \cvtag{Bitrise CI}
+            \vspace{0.4cm}
 	      
 	      \headerrow
-	      {\textbf{28 by Sam Wood}}
-	      {\textbf{}}
-	      \headerrow
-	      {\emph{August 2020 -- October 2020}}
-	      {\emph{}}
-	      \begin{itemize*}
-	      	\item A fitness and nutrition mobile app to help people live their life better by bringing life-changing fitness and nutrition to every home.
-	      \end{itemize*}
-	      
-	      \headerrow
-	      {\textbf{Covidcare}}
-	      {\textbf{}}
-	      \headerrow
-	      {\emph{Mar 2020 -- April 2020}}
-	      {\emph{}}
-	      \begin{itemize*}
-	      	\item A mobile app linking patients in self-isolation to doctors at the front-line of the Covid-19 pandemic, partnering with Melbourne University.
-	      \end{itemize*}
-	      
-	      \headerrow
-	      {\textbf{Beyond Now}}
+	      {\textbf{Beyond Now - Mobile }}
 	      {\textbf{}}
 	      \headerrow
 	      {\emph{Jan 2018 -- September 2021}}
 	      {\emph{}}
 	      \begin{itemize*}
 	      	\item Beyond blue's suicide safety planning app that assists you to create your own suicide safety plan; a plan to keep you safe when experiencing suicidal thoughts.
+            \item Provided DevOps support: created and maintained the CI/CD pipeline for the iOS and Android native mobile apps. 
+            \item Developed the automation suite using Appium
+            \item Created a smoke testing suite that ran on an AWS stack (Cloudwatch, Codepipelines, Device Farm) managed by Cloudformation templates.
 	      \end{itemize*}
+            \vspace{0.2cm}
+            \cvtag {Python} \cvtag{Appium} \cvtag{Buddybuild} \cvtag{Bitrise CI} \cvtag {Cloudwatch} \cvtag{Cloudformation} \cvtag{Lambda} \cvtag{S3} \cvtag{Route53} \cvtag{Codepipelines} \cvtag{Lambda} \cvtag{S3}
+            \vspace{0.4cm}
 	      
 	      \headerrow
-	      {\textbf{Althea Concierge}}
+	      {\textbf{Wiggles/Sesame Street Yourself/Oddbods oddlife - Mobile games}}
 	      {\textbf{}}
 	      \headerrow
-	      {\emph{March 2019 -- April 2019}}
-	      {\emph{}}
-	      \begin{itemize*}
-	      	\item A web and mobile app service that simplifies the medicinal cannabis application process for patients and healthcare professionals, making it easier for patients to access the support they need.
-	      \end{itemize*}
-	      
-	      \headerrow
-	      {\textbf{Sesame Street Yourself}}
-	      {\textbf{}}
-	      \headerrow
-	      {\emph{September 2018 -- December 2018}}
+	      {\emph{Jan 2018 -- Dec 2018}}
 	      {\emph{}}
 	      \begin{itemize*}
 	      	\item An engaging mobile Augmented Reality experience enabling children to sing and play along with their favorite screen characters.
+            \item Provided DevOps support: created and maintained the CI/CD pipeline for the Game Engine team using Gitlab. 
 	      \end{itemize*}
+            \vspace{0.2cm}
+            \cvtag {iOS} \cvtag {Android} \cvtag {Gitlab} \cvtag{Buddybuild CI} \cvtag {Bitrise CI}
+            \cvtag {Locust} \cvtag {Terraform}
+            \vspace{0.4cm}
 	      
 	      \headerrow
-	      {\textbf{Verizon Digital Kiosk}}
+	      {\textbf{Verizon Digital Kiosk - Embedded system}}
 	      {\textbf{}}
 	      \headerrow
 	      {\emph{2017 -- 2018}}
 	      {\emph{}}
 	      \begin{itemize*}
 	      	\item Communications hubs that connect people to important and useful information - providing weather and emergency alerts, maps and local community information about transit, restaurants, businesses and events.
+            \item Provided DevOps support: maintained the existing Bitrise CI/CD pipeline for the android applications developed for the Digital Kiosk.
+            \item Developed a regression automation suite using bats (bash automation testing framework).
+            \item Created a script to download test builds from Bitrise (CI) to install on the Digital Kiosk towers for testing, greatly reducing the set up time for regularly occuring testing activities.
 	      \end{itemize*}
+            \vspace{0.2cm}
+            \cvtag {Android} \cvtag {Bash} \cvtag{Bitrise CI}
+            \vspace{0.4cm}
+
+         \headerrow
+         {\textbf{Vividas - Video Player SDK}}
+         {\textbf{}}
+         \headerrow
+         {\emph{2017 -- 2018}}
+         {\emph{}}
+         \begin{itemize*}
+         	\item Cross platform video distribution and playback service for mobile and desktop.  
+            \item Provided DevOps support: maintaining the Jenkins build master and slaves and the CI pipeline to build the core video engine and the native iOS and Android mobile applications. 
+            \item Migrated away from the use of Jenkins jobs to using a declarative Jenkins pipeline that could be versioned controlled
+         \end{itemize*}
+         \vspace{0.2cm}
+         \cvtag {iOS} \cvtag{Android} \cvtag{Windows app} \cvtag{Jenkins}
+         \vspace{0.4cm}
+
 	      
 \end{itemize}
 	      
 \hrule
 \vspace{-1em}
-\subsection*{\Large Skills}
+\subsection*{\Large Technical Skills}
 
 \hyphenpenalty=1000
 \begin{itemize}[leftmargin=1em,noitemsep]
-	\item \textbf{Languages:}
-	      Typescript, Python, Bash, Swift, Kotlin, Lua, \LaTeX
+	\item \textbf{Programming Languages:}
+	      Typescript/Javascript, Python, Bash, \LaTeX
 	\item \textbf{Test Automation:}
-	    Webdriver.io, Playwright, Cypress, XCUITest, Appium, Browserstack, Postman, Wiremock, AWS Device Farm
-	\item \textbf{CI/CD} Github Actions, Jenkins, Gitlab, Bitrise, Buddybuild, Codepipelines, Docker
-	\item \textbf{Performance:} Jmeter, Locust, k6
-    \item \textbf{AWS:} S3, Cloudformation, Cloudfront, Route53, Codepipelines, Lambdas, Chatbot
-    \item \textbf{Other:} Linux, Wireshark, Charles proxy, Burpsuite
+	    Webdriver.io, Playwright, Cypress, XCUITest, Appium, Cucumber, Wiremock, Jest, Axe, Bats
+	\item \textbf{CI/CD} 
+        Github Actions, Jenkins, Gitlab, Bitrise, Buildkite, Buddybuild, Fastlane, Bitbucket pipelines
+	\item \textbf{Performance:} 
+        Jmeter, K6, Locust, Lighthouse
+    \item \textbf{Amazon Web Services (AWS):} 
+        EC2, S3, IAM, Cloudwatch, Lambda, Cloudformation, Cloudfront, Route53, Codepipelines
+    \item \textbf{Containers/Networking:}
+        Docker, SSH
+    \item \textbf{Configuration management:} 
+        Terraform
+    \item \textbf{Monitoring:} New Relic, Sumologic
+    \item \textbf{Version control:} 
+        Git, Github, Gitlab, Bitbucket
+    \item \textbf{Development tools:}
+        Neovim, Tmux, Alacritty, Vscode
+    \item \textbf{Operating Systems:} 
+        Linux, macOS, Ubuntu, PopOS (Ubuntu), Archlinux, Windows
 \end{itemize}
 
 \hrule
@@ -240,7 +292,7 @@
 	\item
 	      \headerrow
 	      {\textbf{OWASP Appsec Day 2019}}
-	      {\textbf{Melbourne, AU}}
+	      {\textbf{Melbourne, Australia}}
 	      \headerrow
 	      {\emph{Web Hacking Essentials}}
 	      {\emph{November 2019}}
@@ -257,7 +309,7 @@
 	\item
 	      \headerrow
 	      {\textbf{RMIT University}}
-	      {\textbf{Melbourne, AU}}
+	      {\textbf{Melbourne, Australia}}
 	      \headerrow
 	      {\emph{B.S. Electrical Engineering/Commerce}}
 	      {\emph{March 2012 -- July 2017}}
