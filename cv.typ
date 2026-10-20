@@ -11,7 +11,7 @@
 
 #show link: set text(fill: rgb("#1a4d8f"))
 #show heading.where(level: 1): it => block(
-  above: 1.1em,
+  above: 0.9em,
   below: 0.6em,
   width: 100%,
   stroke: (bottom: 0.6pt),
@@ -31,7 +31,7 @@
 
 #align(center)[
   #text(size: 16pt, weight: "bold")[Brian Fung]
-  #v(-0.4em)
+  #v(0em)
   Melbourne, Australia |
   0422 285 751 |
   #link("mailto:brianf.iwnl@gmail.com", "brianf.iwnl@gmail.com") |
