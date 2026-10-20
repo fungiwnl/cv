@@ -24,7 +24,7 @@
   text(size: 10pt, weight: "bold", it.body),
 )
 
-#let company(name, location, above: 1.8em) = block(above: above, below: 0.4em, strong[#name – #location])
+#let company(name, above: 1.8em) = block(above: above, below: 0.4em, strong(name))
 
 #let dated(body, dates, below: 0.5em) = block(above: 0.4em, below: below)[#body #h(1fr) #dates]
 #let job(title, dates, below: 0.9em) = dated(emph(title), dates, below: below)
@@ -44,7 +44,7 @@ DevOps / Platform Engineer with 9 years across technology, including platform en
 
 = Professional Experience
 
-#company(above: 1em)[Kmart Australia][Melbourne]
+#company(above: 1em)[Kmart Australia]
 #job(below: 0.5em)[DevOps Engineer][July 2024 – Present]
 
 == Cost optimisation and FinOps
@@ -92,7 +92,7 @@ DevOps / Platform Engineer with 9 years across technology, including platform en
 
 - Mentored a graduate engineer and built a dotfiles bootstrapper to speed up engineer onboarding.
 
-#company[Kmart Australia][Melbourne]
+#company[Kmart Australia]
 #job[Software Test Engineer][September 2021 – July 2024]
 
 - Core maintainer of the Kmart Online test automation framework, migrating WebdriverIO from synchronous to asynchronous and adding linting, logging and end-to-end email testing, improving suite stability.
@@ -100,7 +100,7 @@ DevOps / Platform Engineer with 9 years across technology, including platform en
 - Migrated functional tests to run against stubs using WireMock, reducing runtime by 90%, from 30 minutes to 3 minutes for 50 tests.
 - Core contributor to the performance test suite for Peak trading readiness.
 
-#company[Two Bulls][Melbourne]
+#company[Two Bulls]
 #job(below: 0.4em)[Senior QA Engineer][September 2019 – August 2021]
 #job[QA Engineer][May 2017 – September 2019]
 
@@ -131,5 +131,5 @@ DevOps / Platform Engineer with 9 years across technology, including platform en
 
 = Education and Training
 
-#dated[*RMIT University* – Bachelor of Electrical Engineering / Bachelor of Commerce, Melbourne][2012 – 2017]
-#dated[*OWASP AppSec Day* – Web Hacking Essentials, Melbourne][November 2019]
+#dated[*RMIT University* – Bachelor of Electrical Engineering / Bachelor of Commerce][2012 – 2017]
+#dated[*OWASP AppSec Day* – Web Hacking Essentials][November 2019]
