@@ -26,8 +26,8 @@
 
 #let company(name, location, above: 1.8em) = block(above: above, below: 0.4em, strong[#name – #location])
 
-#let dated(body, dates) = block(above: 0.4em, below: 0.5em)[#body #h(1fr) #dates]
-#let job(title, dates) = dated(emph(title), dates)
+#let dated(body, dates, below: 0.5em) = block(above: 0.4em, below: below)[#body #h(1fr) #dates]
+#let job(title, dates, below: 0.9em) = dated(emph(title), dates, below: below)
 
 #align(center)[
   #text(size: 16pt, weight: "bold")[Brian Fung]
@@ -45,7 +45,7 @@ DevOps / Platform Engineer with 8 years across technology, including platform en
 = Professional Experience
 
 #company(above: 1em)[Kmart Australia][Melbourne]
-#job[DevOps Engineer][July 2024 – Present]
+#job(below: 0.5em)[DevOps Engineer][July 2024 – Present]
 
 == Cost optimisation and FinOps
 
@@ -101,7 +101,7 @@ DevOps / Platform Engineer with 8 years across technology, including platform en
 - Core contributor to the performance test suite for Peak trading readiness.
 
 #company[Two Bulls][Melbourne]
-#job[Senior QA Engineer][September 2019 – August 2021]
+#job(below: 0.4em)[Senior QA Engineer][September 2019 – August 2021]
 #job[QA Engineer][May 2017 – September 2019]
 
 - Created and maintained CI/CD pipelines for iOS, Android, web and game engine projects using Jenkins, GitLab CI/CD, Bitrise, GitHub Actions and Fastlane, including code signing and automated release deployment to the App Store and Google Play.
