@@ -73,7 +73,7 @@ DevOps / Platform Engineer with 9 years across technology, including platform en
 == Developer enablement and self-service
 
 - Identified the need for and built a self-service Akamai cache purge tool for the online merchandising team, secured with Microsoft Entra ID single sign-on (SSO) and a full audit trail, cutting purge turnaround from 10–15 minutes (or next business day after hours) to seconds. The team ran 695 purges in the first 3 months, saving an estimated 115–170 hours of waiting and 695 engineer interruptions.
-- Built a self-service Redis cache purge tool so teams can clear cached data without engineering involvement.
+- Built a self-service Redis cache purge CLI so feature teams no longer SSH into a host in the Redis VPC.
 - Built a Playwright test automation framework integrated with CI/CD and adopted by 4 squads, migrating from WebdriverIO and cutting regression suite runtime by 75%, from 40 minutes to 10 minutes.
 - Built a serverless personalisation API platform on AWS with GitHub Actions, CDK scaffolding for API Gateway and Lambda endpoints, and Sumo Logic observability built in.
 - Built an Express mock service on Amazon ECS so teams can develop against endpoints before real services exist.
