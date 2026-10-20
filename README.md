@@ -1,58 +1,40 @@
 # Curriculum Vitae
 
+Written in [Typst](https://typst.app). `cv.typ` is the source and `cv.pdf` is the built CV.
+
 ## Usage
 
-### Dockerised LaTeX Environment
-
-#### Set up
-
-- Install Docker
-- Install Vscode LaTeX workshop extension 
-
-
-
-#### Build the Dockerfile
-
-`docker build . --file Dockerfile --tag fungiwnl/tex`
-
-#### Vscode live editor
-
-- Add the following to your Vscode config 
+### Set up
 
 ```
-{
-    "latex-workshop.docker.enabled": true,
-    "latex-workshop.latex.outDir": "./out",
-    "latex-workshop.synctex.afterBuild.enabled": true,
-    "latex-workshop.view.pdf.viewer": "tab",
-    "latex-workshop.docker.image.latex": "fungiwnl/tex",
-  }
+brew install typst
 ```
 
-And then you can build a LaTeX file by clicking on the build icon.
+For live preview in your editor, install the [Tinymist](https://github.com/Myriad-Dreamin/tinymist) extension (VS Code) or language server (Neovim).
 
-#### Compile .tex to .pdf
+### Compile
 
 ```
-docker run \      
---volume $(pwd):/tmp \
-fungiwnl/tex \
-pdflatex cv.tex
+typst compile --font-path fonts --ignore-system-fonts cv.typ cv.pdf
 ```
 
+Use `typst watch` with the same arguments to rebuild on every save.
 
-### Using Overleaf
+The Lato font files are checked in under `fonts/` (SIL Open Font License, see `fonts/OFL.txt`), so the PDF comes out the same locally and in CI.
 
-1. Create a new project in Overleaf.
-2. Copy cv.tex into your project.
-3. Edit cv.tex with your information.
-4. Click Recompile and download your generated PDF.
+### ATS
 
-## To-do 
+The layout is a single column with plain-text contact details and standard section headings, so applicant tracking systems can parse it. To check what a parser sees:
 
-- The provided dockerfile uses the full `texfull-live` behemoth, so the docker image is 4GBs. Ideally, we have a minimal dependency docker image compiling the tex.
-- GitHub Container Registry caching. The docker image is building from scratch everytime, so it takes a good 10 minutes long.
+```
+brew install poppler
+pdftotext -layout cv.pdf -
+```
+
+## CI
+
+GitHub Actions compiles `cv.typ` on pushes to `main` and on pull requests, and uploads the PDF as a build artifact.
 
 ## License and Credits
 
-Credit to [dphang](https://github.com/dphang/resume) for the template
+Originally based on the LaTeX template by [dphang](https://github.com/dphang/resume).
