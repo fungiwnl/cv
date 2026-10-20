@@ -4,7 +4,7 @@
   keywords: ("DevOps Engineer", "AWS", "Google Cloud Platform", "Terraform", "Akamai", "CI/CD"),
   date: none,
 )
-#set page(paper: "a4", margin: (x: 1.5cm, y: 1.2cm))
+#set page(paper: "a4", margin: (x: 1.5cm, y: 1cm))
 #set text(font: "Lato", size: 10pt, lang: "en", region: "AU", hyphenate: false)
 #set par(justify: false, leading: 0.5em, spacing: 0.6em)
 #set list(indent: 0.4em, body-indent: 0.5em, spacing: 0.45em)
@@ -29,16 +29,13 @@
 #let dated(body, dates) = block(above: 0.4em, below: 0.5em)[#body #h(1fr) #dates]
 #let job(title, dates) = dated(emph(title), dates)
 
-#block[
+#align(center)[
   #text(size: 16pt, weight: "bold")[Brian Fung]
-  #h(1fr)
-  #text(size: 9pt)[
-    Melbourne, Australia |
-    0422 285 751 |
-    #link("mailto:brianf.iwnl@gmail.com", "brianf.iwnl@gmail.com") |
-    #link("https://github.com/fungiwnl")[github.com/fungiwnl] |
-    #link("https://fungiwnl.com")[fungiwnl.com]
-  ]
+  #v(-0.4em)
+  Melbourne, Australia |
+  0422 285 751 |
+  #link("mailto:brianf.iwnl@gmail.com", "brianf.iwnl@gmail.com") |
+  #link("https://github.com/fungiwnl")[github.com/fungiwnl]
 ]
 
 = Summary
