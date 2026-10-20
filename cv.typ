@@ -32,6 +32,7 @@
 #align(center)[
   #text(size: 16pt, weight: "bold")[Brian Fung]
   #v(0em)
+  Australia (open to remote) |
   +61 422 285 751 |
   #link("mailto:brianf.iwnl@gmail.com", "brianf.iwnl@gmail.com") |
   #link("https://github.com/fungiwnl")[github.com/fungiwnl]
