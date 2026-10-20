@@ -116,7 +116,7 @@ DevOps / Platform Engineer with 9 years across technology, including platform en
 #let skill(category, items) = block(above: 0.45em, below: 0.45em)[*#category:* #items]
 
 #skill[AWS][EC2, ECS, ECR, Lambda, API Gateway, Application Load Balancer, VPC, Route 53, S3, CloudFront, IAM, DynamoDB, ElastiCache, SQS, SNS, Systems Manager, Fault Injection Service]
-#skill[Google Cloud Platform][Cloud Run, Cloud Load Balancing, Cloud Armor, VPC, IAM, Workload Identity Federation, Cloud Storage, Storage Transfer Service, BigQuery, Cloud Monitoring, Vertex AI Search, Gemini Enterprise for Customer Experience]
+#skill[Google Cloud Platform][Cloud Run, Cloud Load Balancing, Cloud Armor, VPC, IAM, Workload Identity Federation, Cloud Storage, Storage Transfer Service, BigQuery, Cloud Monitoring, Vertex AI Search, Gemini Enterprise]
 #skill[Infrastructure as Code][Terraform, AWS CDK, CloudFormation]
 #skill[CDN][Akamai EdgeWorkers, Flexible Composition, Property Manager, WAF, Bot Manager; Imperva]
 #skill[CI/CD][Buildkite, GitHub Actions, GitLab CI/CD, Bitrise, Jenkins, AWS CodePipeline, Bitbucket Pipelines, Fastlane; blue/green and canary deployments]
@@ -129,7 +129,8 @@ DevOps / Platform Engineer with 9 years across technology, including platform en
 #skill[AI and developer tools][Cursor CLI (AI coding agent), AWS DevOps Agent, AWS Security Agent, Neovim, tmux]
 #skill[Practices][TDD, BDD, pair programming, code review, Agile (Scrum, Kanban), CI/CD, infrastructure as code, incident response and on-call, root cause analysis, disaster recovery testing, FinOps]
 
-= Education and Training
+= Education, Training and Awards
 
 #dated[*RMIT University* – Bachelor of Electrical Engineering / Bachelor of Commerce][2012 – 2017]
 #dated[*OWASP AppSec Day* – Web Hacking Essentials][November 2019]
+#block(above: 0.4em, below: 0.5em)[*Think Customer Golden Kudos Award* (nominee) – nominated by Kmart's Chief Product Officer for the team's customer-first delivery of Joy and Vertex AI Search]
