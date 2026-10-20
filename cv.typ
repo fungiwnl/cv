@@ -55,8 +55,8 @@ DevOps / Platform Engineer with 9 years across technology, including platform en
 
 == Platform and AI infrastructure
 
-- Delivered Kmart's first production applications on Google Cloud Platform, Joy (AI chatbot) and Vertex AI Search for Commerce, taking each from proof of concept to production in 3 weeks on aggressive timelines, using newly released GCP AI products with many unknowns.
-- Built end-to-end infrastructure, CI/CD pipelines and CDN configuration for Joy, Kmart's AI chatbot, on Google Cloud Platform using Terraform.
+- Delivered Kmart's first production applications on Google Cloud Platform, Joy (a Gemini-powered generative AI shopping assistant) and Vertex AI Search for Commerce, taking each from proof of concept to production in 3 weeks on aggressive timelines, using newly released GCP AI products with many unknowns.
+- Built end-to-end GCP infrastructure, CI/CD pipelines and CDN configuration for Joy using Terraform.
 - Built GCP infrastructure for the Constructor.io to Vertex AI Search for Commerce migration, including Cloud Run, load balancers, Cloud Armor, Certificate Manager, a token service, canary deployments and Akamai traffic routing.
 - Negotiated GCP security architecture with the security team (DNS, internal domain reuse, Google-managed certificate ownership) and enabled keyless Buildkite deployments via Workload Identity Federation (WIF).
 - Diagnosed and remediated performance issues, including approximately 1,900 ms of search latency caused by CDN tiered distribution routing through US points of presence, and drove the APAC fix with Akamai.
@@ -116,7 +116,7 @@ DevOps / Platform Engineer with 9 years across technology, including platform en
 #let skill(category, items) = block(above: 0.45em, below: 0.45em)[*#category:* #items]
 
 #skill[AWS][EC2, ECS, ECR, Lambda, API Gateway, Application Load Balancer, VPC, Route 53, S3, CloudFront, IAM, DynamoDB, ElastiCache, SQS, SNS, Systems Manager, Fault Injection Service]
-#skill[Google Cloud Platform][Cloud Run, Cloud Load Balancing, Cloud Armor, VPC, IAM, Workload Identity Federation, Cloud Storage, Storage Transfer Service, BigQuery, Cloud Monitoring, Vertex AI Search]
+#skill[Google Cloud Platform][Cloud Run, Cloud Load Balancing, Cloud Armor, VPC, IAM, Workload Identity Federation, Cloud Storage, Storage Transfer Service, BigQuery, Cloud Monitoring, Vertex AI Search, Gemini Enterprise for Customer Experience]
 #skill[Infrastructure as Code][Terraform, AWS CDK, CloudFormation]
 #skill[CDN][Akamai EdgeWorkers, Flexible Composition, Property Manager, WAF, Bot Manager; Imperva]
 #skill[CI/CD][Buildkite, GitHub Actions, GitLab CI/CD, Bitrise, Jenkins, AWS CodePipeline, Bitbucket Pipelines, Fastlane; blue/green and canary deployments]
