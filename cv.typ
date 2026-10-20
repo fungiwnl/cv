@@ -40,7 +40,7 @@
 
 = Summary
 
-DevOps / Platform Engineer with 8 years across technology, including platform engineering, CI/CD and test automation. I build infrastructure on AWS and Google Cloud Platform with Terraform and AWS CDK, and edge services on Akamai EdgeWorkers. Focused on cutting costs, improving reliability and building self-service tools that remove engineering bottlenecks.
+DevOps / Platform Engineer with 8 years across technology, including platform engineering, CI/CD and test automation. I build infrastructure on AWS and Google Cloud Platform with Terraform and AWS CDK, and edge services on Akamai EdgeWorkers. Focused on cutting costs, improving reliability and building self-service tools that remove engineering bottlenecks. Currently learning Kubernetes and Microsoft Azure.
 
 = Professional Experience
 
