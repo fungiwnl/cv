@@ -41,7 +41,7 @@
 
 = Summary
 
-DevOps Engineer with 9 years across platform engineering, CI/CD and test automation. Builds infrastructure on AWS and Google Cloud Platform with Terraform and AWS CDK, and edge services on Akamai EdgeWorkers. Focused on cutting costs, improving reliability and building self-service tools that remove engineering bottlenecks.
+DevOps Engineer with 8 years across technology, including platform engineering, CI/CD and test automation. Builds infrastructure on AWS and Google Cloud Platform with Terraform and AWS CDK, and edge services on Akamai EdgeWorkers. Focused on cutting costs, improving reliability and building self-service tools that remove engineering bottlenecks.
 
 = Professional Experience
 
@@ -77,8 +77,7 @@ DevOps Engineer with 9 years across platform engineering, CI/CD and test automat
 - Built a self-service Redis cache purge tool so teams can clear cached data without engineering involvement.
 - Built a Playwright test automation framework integrated with CI/CD and adopted by 4 squads, migrating from WebdriverIO and cutting regression suite runtime by 75%, from 40 minutes to 10 minutes.
 - Built a personalisation API platform on AWS with GitHub Actions, CDK scaffolding for API Gateway and Lambda endpoints, and Sumo Logic observability built in.
-- Built a mock service on Amazon ECS so teams can develop against endpoints before real services exist.
-- Built a Slack intake bot for DevOps requests with AI-generated summaries that create Jira tickets automatically.
+- Built an Express mock service on Amazon ECS so teams can develop against endpoints before real services exist.
 
 == Performance and reliability
 
@@ -111,7 +110,7 @@ DevOps Engineer with 9 years across platform engineering, CI/CD and test automat
 - Designed an automated smoke testing solution on AWS (Lambda, S3, CloudWatch, CodePipeline, Device Farm), provisioned with CloudFormation.
 - Built scripts to automate test build installation on iOS, Android and embedded devices, cutting test setup time from minutes to seconds.
 - Owned test strategy, test creation, execution and automation for web and native mobile applications in agile and waterfall environments, using Cypress, Appium and XCUITest.
-- Selected clients: Service Victoria, Beyond Blue, Scouts Australia, Verizon, Sesame Street, The Wiggles, Michael Clarke's 21 Cricket.
+- Selected clients: Service Victoria, Beyond Blue, Scouts Australia, Verizon, Sesame Street, The Wiggles, 28 By Sam Wood.
 
 = Technical Skills
 
