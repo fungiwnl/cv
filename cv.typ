@@ -39,6 +39,10 @@
   #link("https://fungiwnl.com")[fungiwnl.com]
 ]
 
+= Summary
+
+DevOps Engineer with 9 years across platform engineering, CI/CD and test automation. Builds infrastructure on AWS and Google Cloud Platform with Terraform and AWS CDK, and edge services on Akamai EdgeWorkers. Focused on cutting costs, improving reliability and building self-service tools that remove engineering bottlenecks.
+
 = Professional Experience
 
 #company[Kmart Australia][Melbourne]
@@ -63,14 +67,13 @@
 
 - Led solution architecture for Kasada bot protection using Akamai EdgeWorkers Flexible Composition, with automated regression coverage and fault injection tests to validate resilience and failure handling.
 - Negotiated with the security team to enable Akamai pragma debug headers under IP allowlisting and required-header controls, unblocking automated test coverage that guards CDN and EdgeWorker functionality from regressions.
-- Main contributor to the ko-cdn repository pattern, managing Akamai property configuration and EdgeWorkers as code, with automated regression tests in CI/CD.
+- Main contributor to a CDN-as-code repository, managing Akamai property configuration and EdgeWorkers as code, with automated regression tests in CI/CD.
 - Delivered Kmart's first production Akamai EdgeWorker (visitor ID), and led the investigation that showed true median latency was about 95 ms rather than the reported 800 ms, correcting a measurement error in RUM instrumentation.
 - Supported Akamai WAF and Bot Manager tuning and a firewall cutover.
 
 == Developer enablement and self-service
 
-- Identified the need for and built a self-service Akamai cache purge tool for the online merchandising team to purge Contentful pages, secured with Microsoft Entra ID single sign-on (SSO) and a full audit trail of every purge.
-- Cut purge turnaround from 10–15 minutes (or next business day for after-hours requests) to seconds. The team ran 695 purges in the first 3 months, removing an estimated 115–170 hours of waiting and 695 engineer interruptions.
+- Identified the need for and built a self-service Akamai cache purge tool for the online merchandising team, secured with Microsoft Entra ID single sign-on (SSO) and a full audit trail, cutting purge turnaround from 10–15 minutes (or next business day after hours) to seconds. The team ran 695 purges in the first 3 months, saving an estimated 115–170 hours of waiting and 695 engineer interruptions.
 - Built a self-service Redis cache purge tool so teams can clear cached data without engineering involvement.
 - Built a Playwright test automation framework integrated with CI/CD and adopted by 4 squads, migrating from WebdriverIO and cutting regression suite runtime by 75%, from 40 minutes to 10 minutes.
 - Built a personalisation API platform on AWS with GitHub Actions, CDK scaffolding for API Gateway and Lambda endpoints, and Sumo Logic observability built in.
@@ -85,8 +88,7 @@
 - Designed a token toggle supporting both real and forged authentication tokens, with production safeguards, enabling load testing of authenticated customer journeys without disrupting test environments.
 - Built test data generation scripts for performance testing, reducing test preparation time from hours to minutes.
 - Participated in incident response as part of the on-call rotation, and led the root cause analysis (RCA) of a production ECS cascading failure.
-- Led the Recommender API migration to improve service stability and observability.
-- Built observability with New Relic and Sumo Logic.
+- Led the Recommender API migration for service stability, and built New Relic and Sumo Logic observability.
 
 == Leadership and mentoring
 
@@ -124,17 +126,11 @@
 #skill[Testing][Playwright, Jest, Vitest, Supertest, Cypress, Appium, Cucumber, WireMock]
 #skill[Performance testing][JMeter, k6, Locust, Lighthouse]
 #skill[Observability][New Relic, Datadog, Sumo Logic, Amazon CloudWatch]
-#skill[Security][AWS Secrets Manager, Wiz, Snyk, Kasada]
-#skill[Identity and access][Auth0, Microsoft Entra ID, SSO]
-#skill[AI operations][AWS DevOps Agent, AWS Security Agent]
-#skill[APIs and data][REST, GraphQL, Redis, Valkey]
-#skill[Integrations][Contentful, Tealium, Braze]
-#skill[Developer tooling][Neovim, tmux]
+#skill[Security and identity][AWS Secrets Manager, Wiz, Snyk, Kasada, Auth0, Microsoft Entra ID, SSO]
+#skill[APIs, data and integrations][REST, GraphQL, Redis, Valkey, Contentful, Tealium, Braze]
+#skill[AI operations and tooling][AWS DevOps Agent, AWS Security Agent, Neovim, tmux]
 
-= Training
-
-#dated[*OWASP AppSec Day* – Web Hacking Essentials, Melbourne][November 2019]
-
-= Education
+= Education and Training
 
 #dated[*RMIT University* – Bachelor of Electrical Engineering / Bachelor of Commerce, Melbourne][2012 – 2017]
+#dated[*OWASP AppSec Day* – Web Hacking Essentials, Melbourne][November 2019]
