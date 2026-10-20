@@ -24,7 +24,7 @@
   text(size: 10pt, weight: "bold", it.body),
 )
 
-#let company(name, location) = block(above: 1em, below: 0.4em, strong[#name – #location])
+#let company(name, location, above: 1.8em) = block(above: above, below: 0.4em, strong[#name – #location])
 
 #let dated(body, dates) = block(above: 0.4em, below: 0.5em)[#body #h(1fr) #dates]
 #let job(title, dates) = dated(emph(title), dates)
@@ -44,7 +44,7 @@ DevOps / Platform Engineer with 8 years across technology, including platform en
 
 = Professional Experience
 
-#company[Kmart Australia][Melbourne]
+#company(above: 1em)[Kmart Australia][Melbourne]
 #job[DevOps Engineer][July 2024 – Present]
 
 == Cost optimisation and FinOps
