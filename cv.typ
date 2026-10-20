@@ -33,14 +33,14 @@
   #text(size: 16pt, weight: "bold")[Brian Fung]
   #v(0em)
   Melbourne, Australia |
-  0422 285 751 |
+  +61 422 285 751 |
   #link("mailto:brianf.iwnl@gmail.com", "brianf.iwnl@gmail.com") |
   #link("https://github.com/fungiwnl")[github.com/fungiwnl]
 ]
 
 = Summary
 
-DevOps / Platform Engineer with 8 years across technology, including platform engineering, CI/CD and test automation. I build infrastructure on AWS and Google Cloud Platform with Terraform and AWS CDK, and edge services on Akamai EdgeWorkers. Focused on cutting costs, improving reliability and building self-service tools that remove engineering bottlenecks. Currently learning Kubernetes and Microsoft Azure.
+DevOps / Platform Engineer with 9 years across technology, including platform engineering, CI/CD and test automation. I build infrastructure on AWS and Google Cloud Platform with Terraform and AWS CDK, and edge services on Akamai EdgeWorkers. Focused on cutting costs, improving reliability and building self-service tools that remove engineering bottlenecks. Currently learning Kubernetes and Microsoft Azure.
 
 = Professional Experience
 
@@ -75,7 +75,7 @@ DevOps / Platform Engineer with 8 years across technology, including platform en
 - Identified the need for and built a self-service Akamai cache purge tool for the online merchandising team, secured with Microsoft Entra ID single sign-on (SSO) and a full audit trail, cutting purge turnaround from 10–15 minutes (or next business day after hours) to seconds. The team ran 695 purges in the first 3 months, saving an estimated 115–170 hours of waiting and 695 engineer interruptions.
 - Built a self-service Redis cache purge tool so teams can clear cached data without engineering involvement.
 - Built a Playwright test automation framework integrated with CI/CD and adopted by 4 squads, migrating from WebdriverIO and cutting regression suite runtime by 75%, from 40 minutes to 10 minutes.
-- Built a personalisation API platform on AWS with GitHub Actions, CDK scaffolding for API Gateway and Lambda endpoints, and Sumo Logic observability built in.
+- Built a serverless personalisation API platform on AWS with GitHub Actions, CDK scaffolding for API Gateway and Lambda endpoints, and Sumo Logic observability built in.
 - Built an Express mock service on Amazon ECS so teams can develop against endpoints before real services exist.
 
 == Performance and reliability
@@ -85,7 +85,7 @@ DevOps / Platform Engineer with 8 years across technology, including platform en
 - Led performance testing for Peak trading readiness using JMeter, validating platform capacity ahead of the highest-traffic period of the year.
 - Designed a token toggle supporting both real and forged authentication tokens, with production safeguards, enabling load testing of authenticated customer journeys without disrupting test environments.
 - Built test data generation scripts for performance testing, reducing test preparation time from hours to minutes.
-- Participated in incident response as part of the on-call rotation, and led the root cause analysis (RCA) of a production ECS cascading failure.
+- Participated in incident response as part of the on-call rotation, and led the root cause analysis (RCA) of a cascading failure across production ECS microservices.
 - Led the Recommender API migration for service stability, and built New Relic and Sumo Logic observability.
 
 == Leadership and mentoring
