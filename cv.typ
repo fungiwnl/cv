@@ -130,6 +130,7 @@ DevOps / Platform Engineer with 8 years across technology, including platform en
 #skill[Security and identity][AWS Secrets Manager, Wiz, Snyk, Kasada, Auth0, Microsoft Entra ID, SSO]
 #skill[APIs, data and integrations][REST, GraphQL, Redis, Valkey, Contentful, Tealium, Braze]
 #skill[AI operations and tooling][AWS DevOps Agent, AWS Security Agent, Neovim, tmux]
+#skill[Practices][TDD, BDD, pair programming, code review, Agile (Scrum, Kanban), CI/CD, infrastructure as code, incident response and on-call, root cause analysis, disaster recovery testing, FinOps]
 
 = Education and Training
 
