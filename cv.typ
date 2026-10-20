@@ -116,7 +116,7 @@ DevOps / Platform Engineer with 8 years across technology, including platform en
 #let skill(category, items) = block(above: 0.45em, below: 0.45em)[*#category:* #items]
 
 #skill[AWS][EC2, ECS, ECR, Lambda, API Gateway, Application Load Balancer, VPC, Route 53, S3, CloudFront, IAM, DynamoDB, ElastiCache, SQS, SNS, Systems Manager, Fault Injection Service]
-#skill[Google Cloud Platform][Cloud Run, Cloud Load Balancing, Cloud Armor, IAM, Workload Identity Federation, Vertex AI Search]
+#skill[Google Cloud Platform][Cloud Run, Cloud Load Balancing, Cloud Armor, VPC, IAM, Workload Identity Federation, Cloud Storage, Storage Transfer Service, BigQuery, Cloud Monitoring, Vertex AI Search]
 #skill[Infrastructure as Code][Terraform, AWS CDK, CloudFormation]
 #skill[CDN][Akamai EdgeWorkers, Flexible Composition, Property Manager, WAF, Bot Manager; Imperva]
 #skill[CI/CD][Buildkite, GitHub Actions, GitLab CI/CD, Bitrise, Jenkins, AWS CodePipeline, Bitbucket Pipelines, Fastlane; blue/green and canary deployments]
