@@ -30,7 +30,7 @@
 #let job(title, dates) = dated(emph(title), dates)
 
 #align(center)[
-  #text(size: 22pt, weight: "bold")[Brian Fung]
+  #text(size: 16pt, weight: "bold")[Brian Fung]
   #v(-0.4em)
   Melbourne, Australia |
   0422 285 751 |
