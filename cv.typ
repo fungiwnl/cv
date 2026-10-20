@@ -29,14 +29,16 @@
 #let dated(body, dates) = block(above: 0.4em, below: 0.5em)[#body #h(1fr) #dates]
 #let job(title, dates) = dated(emph(title), dates)
 
-#align(center)[
+#block[
   #text(size: 16pt, weight: "bold")[Brian Fung]
-  #v(-0.4em)
-  Melbourne, Australia |
-  0422 285 751 |
-  #link("mailto:brianf.iwnl@gmail.com", "brianf.iwnl@gmail.com") |
-  #link("https://github.com/fungiwnl")[github.com/fungiwnl] |
-  #link("https://fungiwnl.com")[fungiwnl.com]
+  #h(1fr)
+  #text(size: 9pt)[
+    Melbourne, Australia |
+    0422 285 751 |
+    #link("mailto:brianf.iwnl@gmail.com", "brianf.iwnl@gmail.com") |
+    #link("https://github.com/fungiwnl")[github.com/fungiwnl] |
+    #link("https://fungiwnl.com")[fungiwnl.com]
+  ]
 ]
 
 = Summary
