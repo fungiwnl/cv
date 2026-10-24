@@ -1,7 +1,7 @@
 #set document(
   title: "Brian Fung – CV",
   author: "Brian Fung",
-  keywords: ("Platform / DevOps Engineer", "AWS", "Google Cloud Platform", "Terraform", "Akamai", "CI/CD"),
+  keywords: ("Platform / DevOps Engineer", "AWS", "Google Cloud Platform", "IaC", "Akamai", "CI/CD"),
   date: none,
 )
 #set page(paper: "a4", margin: (x: 1.5cm, y: 1cm))
@@ -40,7 +40,7 @@
 
 = Summary
 
-Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and quality engineering. I build infrastructure on AWS and Google Cloud Platform with Terraform and AWS CDK, and edge services on Akamai EdgeWorkers, focusing on cost, reliability and self-service tools that remove engineering bottlenecks. My quality engineering background means every change ships with regression, smoke and failure-mode tests as evidence that it works. Currently learning the Kubernetes stack (Helm, GitOps with ArgoCD, Prometheus, Grafana) and Microsoft Azure, and experimenting with LLM prompt loops to speed up development.
+Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and quality engineering. I build infrastructure on AWS and Google Cloud Platform with CDK and Terraform, and edge services on Akamai EdgeWorkers, focusing on cost, reliability and self-service tools that remove engineering bottlenecks. My quality engineering background means every change ships with smoke, regression and failure-mode tests as evidence that it works. Currently learning the Kubernetes stack (Helm, GitOps with ArgoCD, Prometheus, Grafana) and Microsoft Azure, and experimenting with LLM prompt loops to speed up development.
 
 = Professional Experience
 
@@ -49,7 +49,7 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 
 == Platform and AI infrastructure
 
-- Delivered Kmart's first production applications on Google Cloud Platform, Joy (a Gemini-powered generative AI shopping assistant) and Vertex AI Search for Commerce, taking each from proof of concept to production in 4 weeks using newly released GCP AI products with many unknowns, and built Joy's GCP infrastructure, CI/CD pipelines and CDN configuration with Terraform.
+- Delivered Kmart's first production applications on Google Cloud Platform, Joy (a Gemini-powered generative AI shopping assistant) and Vertex AI Search for Commerce, taking each from proof of concept to production in 4 weeks using newly released GCP AI products with many unknowns, and built Joy's GCP infrastructure with Terraform.
 - Built GCP infrastructure for the Search service powered by Vertex AI Search for Commerce, including Cloud Run, Load balancers, Cloud Armor, Certificate Manager, a token service, canary deployments and Akamai traffic routing.
 - Negotiated GCP security architecture with the security team (DNS, internal domain reuse, Google-managed certificate ownership) and enabled keyless Buildkite deployments via Workload Identity Federation (WIF).
 - Diagnosed and remediated performance issues, including approximately 1,900 ms of p99 search latency caused by CDN tiered distribution routing through US points of presence, and drove the APAC fix with Akamai.
@@ -57,9 +57,9 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 
 == Developer enablement and self-service
 
-- Identified the need for and built a self-service React SPA cache purge tool for the online trade team, secured with Microsoft Entra ID single sign-on (SSO) and a full audit trail, cutting purge turnaround from 10–15 minutes (or next business day after hours) to seconds: 695 purges in the first 3 months, saving an estimated 115–170 hours.
-- Built a self-service Redis cache purge CLI with a pipeline, so feature teams no longer SSH into a host in the Redis VPC.
-- Built a Playwright test automation framework integrated with CI/CD and adopted by 4 squads, migrating from WebdriverIO and cutting regression suite runtime by 75%, from 40 minutes to 10 minutes.
+- Identified the need for and built a self-service React SPA cache purge tool for the online trade team, secured with Microsoft Entra ID single sign-on (SSO) and a full audit trail, cutting purge turnaround from 10–15 minutes (or next business day after hours) for the trade teams to seconds: 695 purges in the first 3 months, saving 695 engineer interruptions and context switching.
+- Built a self-service Redis cache purge CLI with a pipeline, so engineers no longer SSH into a host in the Redis VPC.
+- Built a Playwright test automation framework integrated with CI/CD and adopted by 4 feature squads, migrating from WebdriverIO and cutting regression suite runtime by 75%, from 40 minutes to 10 minutes.
 - Led the Recommender API migration to a serverless personalisation platform on AWS for service stability: a shared API Gateway fronting CDK-scaffolded Lambda workers, New Relic and Sumo Logic observability, local DynamoDB, pre-push lint, test and audit hooks, and parallel endpoint deploys in GitHub Actions.
 - Built a scalable mock service using Express on Amazon ECS to stub out third-party integrations for performance testing and let teams develop against endpoints before real services exist.
 
@@ -67,7 +67,7 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 
 - Led edge solution architecture for bot protection using Akamai EdgeWorkers Flexible Composition, with automated regression coverage and fault injection tests to validate resilience and failure handling.
 - Negotiated with the Security team to enable Akamai Pragma debug headers under IP allowlisting and required-header controls, unblocking automated test coverage that guards CDN and EdgeWorker functionality from regressions.
-- Delivered Kmart's first production Akamai EdgeWorker (visitor ID), and led an investigation that showed true median latency was about 95 ms rather than the flagged 700 ms, correcting a measurement error in RUM instrumentation.
+- Delivered Kmart's first production Akamai EdgeWorker (visitor ID endpoint at the edge), and led an investigation that showed true median latency was about 95 ms rather than the flagged 700 ms, correcting a measurement error in RUM instrumentation.
 
 == Performance and reliability
 
@@ -114,11 +114,11 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 #skill[Google Cloud Platform (GCP)][Cloud Run (services and jobs), Cloud Scheduler, Cloud Tasks, Workflows, Cloud Build, Artifact Registry, Cloud Load Balancing (regional, serverless NEGs), Cloud Armor, Certificate Manager, VPC, Serverless VPC Access, IAM, Workload Identity Federation, Cloud Storage, Storage Transfer Service, BigQuery, Cloud Monitoring, Cloud Logging, Vertex AI (Gemini, Vertex AI Search for Commerce)]
 #skill[Infrastructure as code (IaC)][AWS CDK, CloudFormation, Terraform]
 #skill[CDN][Akamai EdgeWorkers, Property Manager, WAF; Imperva]
-#skill[CI/CD][Buildkite, GitHub Actions, GitLab CI/CD, Bitrise, Jenkins, AWS CodePipeline, Bitbucket Pipelines, Fastlane; Blue/green and canary deployments]
-#skill[Languages and platforms][TypeScript, Node.js, Python, Bash, Golang, Git, Linux, Docker]
+#skill[CI/CD][Buildkite, GitHub Actions, GitLab, Bitrise, Jenkins, AWS CodePipeline, Bitbucket Pipelines, Fastlane; Blue/green and canary deployments]
+#skill[Languages and platforms][TypeScript, Node / Javascript, Python, Bash, Golang, Git, Linux, Docker]
 #skill[Testing][Jest, Vitest, Playwright, Supertest, Cypress, Cucumber, WireMock, Appium, XCUITest; Snapshot testing, Accessibility testing]
 #skill[Performance testing][JMeter, k6, Locust, Lighthouse]
-#skill[Observability][New Relic, Sumo Logic, Amazon CloudWatch]
+#skill[Observability][New Relic, Sumo Logic, Amazon CloudWatch, Datadog]
 #skill[Security and identity][AWS Secrets Manager, GCP Secret Manager, Wiz, Snyk, Auth0, Microsoft Entra ID]
 #skill[APIs, data and integrations][REST, GraphQL, gRPC, Redis, Valkey, Commercetools, Contentful, Tealium, Braze]
 #skill[AI and developer tools][Cursor, AWS DevOps Agent, AWS Security Agent, Neovim, Tmux, AeroSpace]
