@@ -50,7 +50,7 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 == Platform and AI infrastructure
 
 - Delivered Kmart's first production applications on Google Cloud Platform, Joy (a Gemini-powered generative AI shopping assistant) and Vertex AI Search for Commerce, taking each from proof of concept to production in 4 weeks using newly released GCP AI products with many unknowns, and built Joy's GCP infrastructure, CI/CD pipelines and CDN configuration with Terraform.
-- Built GCP infrastructure for the Search service powered by Vertex AI Search for Commerce, including Cloud Run, load balancers, Cloud Armor, Certificate Manager, a token service, canary deployments and Akamai traffic routing.
+- Built GCP infrastructure for the Search service powered by Vertex AI Search for Commerce, including Cloud Run, Load balancers, Cloud Armor, Certificate Manager, a token service, canary deployments and Akamai traffic routing.
 - Negotiated GCP security architecture with the security team (DNS, internal domain reuse, Google-managed certificate ownership) and enabled keyless Buildkite deployments via Workload Identity Federation (WIF).
 - Diagnosed and remediated performance issues, including approximately 1,900 ms of p99 search latency caused by CDN tiered distribution routing through US points of presence, and drove the APAC fix with Akamai.
 - Led a VPC migration of a consent management system, integrated with Tealium and Braze, using a blue/green deployment strategy, the first use of blue/green deployment within Kmart Digital, achieving zero downtime.
@@ -92,8 +92,8 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 
 - Core maintainer of the Kmart Online test automation framework, migrating WebdriverIO from synchronous to asynchronous and adding linting, logging and end-to-end email testing, improving suite stability.
 - Moved the automation suite from manual QA runs into Buildkite CI/CD, running regression tests on every build.
-- Migrated functional UI tests to run against stubs using WireMock, reducing runtime by 90%, from 30 minutes to 3 minutes for 50 tests.
 - Led performance testing for Peak trading readiness using JMeter, validating platform capacity ahead of the highest-traffic period of the year.
+- Migrated functional UI tests to run against stubs using WireMock, reducing runtime by 90%, from 30 minutes to 3 minutes for 50 tests.
 
 #company[Two Bulls]
 #job(below: 0.4em)[Senior QA Engineer][September 2019 – August 2021]
@@ -111,18 +111,18 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 #let skill(category, items) = block(above: 0.45em, below: 0.45em)[*#category:* #items]
 
 #skill[Amazon Web Services (AWS)][EC2, ECS, ECR, Lambda, API Gateway, Application Load Balancer, VPC, Route 53, S3, CloudFront, IAM, DynamoDB, ElastiCache, SQS, SNS, Systems Manager, Fault Injection Service]
-#skill[Google Cloud Platform (GCP)][Cloud Run (services and jobs), Cloud Scheduler, Cloud Tasks, Workflows, Cloud Build, Artifact Registry, Firestore (Datastore mode), Cloud Load Balancing (global and regional, serverless NEGs), Cloud Armor, Certificate Manager, VPC, Serverless VPC Access, IAM, Workload Identity Federation, Cloud Storage, Storage Transfer Service, BigQuery, Cloud Monitoring, Cloud Logging, Vertex AI (Gemini, Vertex AI Search for Commerce)]
+#skill[Google Cloud Platform (GCP)][Cloud Run (services and jobs), Cloud Scheduler, Cloud Tasks, Workflows, Cloud Build, Artifact Registry, Cloud Load Balancing (regional, serverless NEGs), Cloud Armor, Certificate Manager, VPC, Serverless VPC Access, IAM, Workload Identity Federation, Cloud Storage, Storage Transfer Service, BigQuery, Cloud Monitoring, Cloud Logging, Vertex AI (Gemini, Vertex AI Search for Commerce)]
 #skill[Infrastructure as code (IaC)][AWS CDK, CloudFormation, Terraform]
-#skill[CDN][Akamai EdgeWorkers, Flexible Composition, Property Manager, WAF, Bot Manager; Imperva]
+#skill[CDN][Akamai EdgeWorkers, Property Manager, WAF; Imperva]
 #skill[CI/CD][Buildkite, GitHub Actions, GitLab CI/CD, Bitrise, Jenkins, AWS CodePipeline, Bitbucket Pipelines, Fastlane; Blue/green and canary deployments]
-#skill[Languages and platforms][TypeScript, Node.js, Bun, Python, Bash, Git, Linux, Docker, Nx, pnpm workspaces]
+#skill[Languages and platforms][TypeScript, Node.js, Python, Bash, Golang, Git, Linux, Docker]
 #skill[Testing][Jest, Vitest, Playwright, Supertest, Cypress, Cucumber, WireMock, Appium, XCUITest; Snapshot testing, Accessibility testing]
 #skill[Performance testing][JMeter, k6, Locust, Lighthouse]
-#skill[Observability][New Relic, Sumo Logic, Amazon CloudWatch, PagerDuty]
+#skill[Observability][New Relic, Sumo Logic, Amazon CloudWatch]
 #skill[Security and identity][AWS Secrets Manager, GCP Secret Manager, Wiz, Snyk, Auth0, Microsoft Entra ID]
 #skill[APIs, data and integrations][REST, GraphQL, gRPC, Redis, Valkey, Commercetools, Contentful, Tealium, Braze]
 #skill[AI and developer tools][Cursor, AWS DevOps Agent, AWS Security Agent, Neovim, Tmux, AeroSpace]
-#skill[Practices][Site Reliability Engineering (SRE), DevSecOps, FinOps, TDD, BDD, Pair programming, Code review, Agile (Scrum, Kanban), Monorepos, Incident response and on-call, Root cause analysis]
+#skill[Practices][DevSecOps, FinOps, Site reliability engineering (SRE), TDD, BDD, Pair programming, Code review, Agile (Scrum, Kanban), Incident response and on-call, Root cause analysis]
 
 = Education, Training and Awards
 
