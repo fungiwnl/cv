@@ -40,7 +40,7 @@
 
 = Summary
 
-Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and quality engineering. I build infrastructure on AWS and Google Cloud Platform with CDK and Terraform, and edge services on Akamai EdgeWorkers, focusing on cost, reliability and self-service tools that remove engineering bottlenecks. My quality engineering background means I build automated tests into delivery rather than treating them as an afterthought. Currently learning the Kubernetes stack (Helm, GitOps with ArgoCD, Prometheus, Grafana) and Microsoft Azure, and experimenting with LLM prompt loops to speed up development.
+Platform / DevOps Engineer with 9 years across platform, CI/CD and quality engineering. I build infrastructure on AWS and Google Cloud Platform with CDK and Terraform, and edge services on Akamai EdgeWorkers, focusing on performance, cost, reliability and self-service tools that remove engineering bottlenecks. My quality engineering background means I build automated tests into delivery rather than treating them as an afterthought. Outside work, I'm learning the Kubernetes stack (Helm, GitOps with ArgoCD, Prometheus, Grafana) and Microsoft Azure, and experimenting with agentic LLM workflows to speed up the SDLC.
 
 = Professional Experience
 
@@ -50,7 +50,7 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 == Platform and AI infrastructure
 
 - Delivered Kmart's first production applications on Google Cloud Platform, Joy (a Gemini-powered generative AI shopping assistant) and Vertex AI Search for Commerce, taking each from proof of concept to production in 4 weeks using newly released GCP AI products with many unknowns, and built Joy's GCP infrastructure with Terraform.
-- Built GCP infrastructure for the Search service powered by Vertex AI Search for Commerce, including Cloud Run, Load balancers, Cloud Armor, Certificate Manager, a token service, canary deployments and Akamai traffic routing.
+- Built GCP infrastructure for the Search service powered by Vertex AI Search for Commerce, including Cloud Run, load balancers, Cloud Armor, Certificate Manager, canary deployments and Akamai traffic routing.
 - Negotiated GCP security architecture with the security team (DNS, internal domain reuse, Google-managed certificate ownership) and enabled keyless Buildkite deployments via Workload Identity Federation (WIF).
 - Diagnosed and remediated performance issues, including approximately 1,900 ms of p99 search latency caused by CDN tiered distribution routing through US points of presence, and drove the APAC fix with Akamai.
 - Led a VPC migration of a consent management system, integrated with Tealium and Braze, using a blue/green deployment strategy, the first use of blue/green deployment within Kmart Digital, achieving zero downtime.
@@ -65,8 +65,8 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 
 == Edge engineering and security
 
-- Led edge solution architecture for bot protection using Akamai EdgeWorkers Flexible Composition, with automated regression coverage and fault injection tests to validate resilience and failure handling.
-- Negotiated with the Security team to enable Akamai Pragma debug headers under IP allowlisting and required-header controls, unblocking automated test coverage that guards CDN and EdgeWorker functionality from regressions.
+- Led edge solution architecture for bot protection using Akamai EdgeWorkers Flexible Composition, with automated regression coverage.
+- Negotiated with the security team to enable Akamai Pragma debug headers under IP allowlisting and required-header controls, unblocking automated test coverage that guards CDN and EdgeWorker functionality from regressions.
 - Delivered Kmart's first production Akamai EdgeWorker (visitor ID endpoint at the edge), and led an investigation that showed true median latency was about 95 ms rather than the flagged 700 ms, correcting a measurement error in RUM instrumentation.
 
 == Performance and reliability
@@ -93,14 +93,14 @@ Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and qual
 - Core maintainer of the Kmart Online test automation framework, migrating WebdriverIO from synchronous to asynchronous and adding linting, logging and end-to-end email testing, improving suite stability.
 - Moved the automation suite from manual QA runs into Buildkite CI/CD, running regression tests on every build.
 - Led performance testing for Peak trading readiness using JMeter, validating platform capacity ahead of the highest-traffic period of the year.
-- Migrated functional UI tests to run against stubs using WireMock, reducing runtime by 90%, from 30 minutes to 3 minutes for 50 tests.
+- Migrated a set of end-to-end tests to run against WireMock stubs, reducing runtime by more than 80%, from 30 minutes to 5 minutes for 50 tests.
 
 #company[Two Bulls]
 #job(below: 0.4em)[Senior QA Engineer][September 2019 – August 2021]
 #job[QA Engineer][May 2017 – September 2019]
 
 - Created and maintained CI/CD pipelines for iOS, Android, Web and Game/Video streaming engine projects using GitLab CI/CD (on-prem), Bitrise, GitHub Actions and Fastlane, including code signing and automated release deployment to the App Store and Google Play.
-- Migrated Jenkins jobs to version-controlled declarative pipelines (pipeline as code), and maintained the on-premises Jenkins build infrastructure for a cross-platform video SDK.
+- Migrated Jenkins jobs to version-controlled declarative pipelines (pipeline as code), and maintained the on-premises Jenkins build infrastructure for a cross-platform video SDK project.
 - Designed an automated test solution on AWS (Lambda, S3, CloudWatch, CodePipeline, Device Farm), provisioned with CloudFormation.
 - Built scripts to automate test build installation on iOS, Android and embedded devices, cutting test setup time from minutes to seconds.
 - Owned test strategy, planning, execution and automation for web and native mobile applications in agile and waterfall environments, using Cypress, Appium and XCUITest.
