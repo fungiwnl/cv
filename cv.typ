@@ -35,7 +35,7 @@
   #link("https://www.google.com/maps/search/?api=1&query=Melbourne%2C+Australia")[Melbourne, Australia] |
   #link("tel:+61422285751")[+61 422 285 751] |
   #link("mailto:brianf.iwnl@gmail.com", "brianf.iwnl@gmail.com") |
-  #link("https://fungiwnl.github.io/terminal/")[fungiwnl.com]
+  #link("https://fungiwnl.github.io/terminal/")[fungiwnl.github.io/terminal]
 ]
 
 = Summary
