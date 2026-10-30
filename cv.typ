@@ -40,7 +40,7 @@
 
 = Summary
 
-Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and quality engineering. I build infrastructure on AWS and Google Cloud Platform with CDK and Terraform, and edge services on Akamai EdgeWorkers, focusing on cost, reliability and self-service tools that remove engineering bottlenecks. My quality engineering background means every change ships with smoke, regression and failure-mode tests as evidence that it works. Currently learning the Kubernetes stack (Helm, GitOps with ArgoCD, Prometheus, Grafana) and Microsoft Azure, and experimenting with LLM prompt loops to speed up development.
+Platform / DevOps Engineer with 9 years across platform, backend, CI/CD and quality engineering. I build infrastructure on AWS and Google Cloud Platform with CDK and Terraform, and edge services on Akamai EdgeWorkers, focusing on cost, reliability and self-service tools that remove engineering bottlenecks. My quality engineering background means I build automated tests into delivery rather than treating them as an afterthought. Currently learning the Kubernetes stack (Helm, GitOps with ArgoCD, Prometheus, Grafana) and Microsoft Azure, and experimenting with LLM prompt loops to speed up development.
 
 = Professional Experience
 
